@@ -1,0 +1,44 @@
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[user]
+	name = Chris Morris
+    email = chris@morris.net
+	signingkey = 3246C7FA219E5A39
+    #signingkey = 25BD35A9926796DE
+    #email = chris@qredo.com
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[url "ssh://git@gitlab.com/"]
+    insteadOf = https://gitlab.com/
+[url "ssh://git@github.com/"]
+	pushInsteadOf = https://github.com/
+[url "ssh://git@gitlab.com/"]
+	pushInsteadOf = https://gitlab.com/
+[push]
+	default = current
+[core]
+	excludesfile = ~/.gitignore
+[credential]
+	helper = !/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/bin/java -Ddebug=false -Djava.net.useSystemProxies=true -jar /usr/local/Cellar/git-credential-manager/2.0.4/libexec/git-credential-manager-2.0.4.jar
+[gui]
+	recentrepo = /Users/chris/scripts

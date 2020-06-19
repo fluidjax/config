@@ -1,0 +1,32 @@
+alias t='tmux a'
+alias durian="ssh root@192.168.0.140";
+alias ls='ls -Galtr'
+alias grep='grep --color=auto'
+
+#alias ls='exa -agls=modified --git'
+#alias ls='exa -gals=modified --git'
+
+
+alias bitcoin="open /Applications/Bitcoin-Qt.app --args -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin"
+alias bitcoint="open /Applications/Bitcoin-Qt.app --args -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin -testnet"
+alias btcd="bitcoind -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin"
+alias btcdt="bitcoind -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin -testnet"
+alias c='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code -n'
+alias code=c
+alias history="history -1000000"
+
+#qredo
+
+alias q='cd /Users/chris/dev/qredo/assets/libs/clitools'
+alias w='/Users/chris/dev/qredo/watcher'
+alias d='cd ~/dev/qredo/qredochain'
+
+
+alias acli='/Users/chris/atlassian-cli-9.1.1/acli.sh'
+
+alias python=/usr/local/bin/python3
+alias python3=/usr/local/bin/python3
+alias pip3=/usr/local/bin/pip3
+alias pip=/usr/local/bin/pip3
+
+alias tx=tmuxinator

@@ -1,0 +1,6 @@
+ln -f -s ~/.config/.vimrc ~/.vimrc
+ln -f -s ~/.config/.zshrc ~/.zshrc
+ln -f -s ~/.config/.tmux.conf ~/.tmux.conf
+ln -f -s ~/.config/.gitconfig ~/.gitconfig
+ln -f -s ~/.config/.gitignore ~/.gitignore
+
