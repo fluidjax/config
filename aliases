@@ -17,12 +17,12 @@ alias history="history -1000000"
 
 #qredo
 
-alias q='cd /Users/chris/dev/qredo/assets/libs/clitools'
-alias w='/Users/chris/dev/qredo/watcher'
+alias q='cd $HOME/dev/qredo/assets/libs/clitools'
+alias w='$HOME/dev/qredo/watcher'
 alias d='cd ~/dev/qredo/qredochain'
 
 
-alias acli='/Users/chris/atlassian-cli-9.1.1/acli.sh'
+alias acli='$HOME/atlassian-cli-9.1.1/acli.sh'
 
 alias python=/usr/local/bin/python3
 alias python3=/usr/local/bin/python3
